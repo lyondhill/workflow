@@ -1,0 +1,79 @@
+{
+    "head": {
+      "next": {
+        "next": {
+          "next": {
+            "next": {
+              "next": {
+                "next": {
+                  "next": {
+                    "next": {
+                      "next": {
+                        "action": {
+                          "activity": "DoMetrics"
+                        }
+                      },
+                      "action": {
+                        "activity": "SendEmail"
+                      }
+                    },
+                    "condition": {
+                      "activity": "UsuallyTrue",
+                      "args": null
+                    },
+                    "action": {
+                      "activity": "Wait"
+                    },
+                    "alternative": {
+                      "action": {
+                        "activity": "CreateTicket"
+                      }
+                    }
+                  },
+                  "action": {
+                    "activity": "DoMetrics"
+                  }
+                },
+                "action": {
+                  "activity": "SendEmail"
+                }
+              },
+              "condition": {
+                "activity": "UsuallyTrue",
+                "args": null
+              },
+              "action": {
+                "activity": "Wait"
+              },
+              "alternative": {
+                "action": {
+                  "activity": "CreateTicket"
+                }
+              }
+            },
+            "action": {
+              "activity": "DoMetrics"
+            }
+          },
+          "action": {
+            "activity": "SendEmail"
+          }
+        },
+        "condition": {
+          "activity": "UsuallyTrue",
+          "args": null
+        },
+        "action": {
+          "activity": "Wait"
+        },
+        "alternative": {
+          "action": {
+            "activity": "CreateTicket"
+          }
+        }
+      },
+      "action": {
+        "activity": "DoMetrics"
+      }
+    }
+  }
